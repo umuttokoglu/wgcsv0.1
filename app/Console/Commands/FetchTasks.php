@@ -41,7 +41,7 @@ class FetchTasks extends Command
 
                 $this->info(__('console.fetch_tasks.info', ['provider' => $provider]));
             } catch (\Exception $e) {
-                $this->error(__('console.fetch_tasks.info', ['provider' => $provider, 'error' => $e->getMessage()]));
+                $this->error(__('console.fetch_tasks.error', ['provider' => $provider, 'error' => $e->getMessage()]));
             }
         }
 
